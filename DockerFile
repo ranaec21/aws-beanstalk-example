@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/springboot-ec2.jar springboot-ec2.jar
+EXPOSE 8085
+ENTRYPOINT ["java","-jar","springboot-ec2.jar"]
